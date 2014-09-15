@@ -53,24 +53,28 @@ public:
 	void save();
 
 private:
-	class Directory_Entry
+	class Directory_Entry // Laura Delaney is working on this section
 	{
 	public:
-		Directory_Entry() {} // Default no-argument constructor 
+		Directory_Entry() {} // Default no-argument constructor
 		Directory_Entry(std::string the_name, std::string the_number) {
-			// constructor not implemented yet
+			name = the_name;
+			number = the_number;
+			// sets the name and number
 		}
 		std::string get_name() const {
-			return ""; // method not implemented yet
+			return name; // returns the name
 		}
 		std::string get_number() const {
-			return ""; // method not implemented yet
+			return number; // returns the number
 		}
 		void set_number(const std::string& new_number) {
-			// method not implemented yet
+			number = new_number;
+			//the number is now the new number
 		}
 	private:
-
+		string name; //the name of the inidividual whose entry this is
+		string number; // the number for the individual named in name
 	};
 
 
