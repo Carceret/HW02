@@ -56,7 +56,7 @@ private:
 	class Directory_Entry // Laura Delaney is working on this section
 	{
 	public:
-		//Directory_Entry() {} // Default no-argument constructor (Don't want a default constructor)
+		Directory_Entry() {} // Default no-argument constructor
 		Directory_Entry(std::string the_name, std::string the_number) {
 			name = the_name;
 			number = the_number;
