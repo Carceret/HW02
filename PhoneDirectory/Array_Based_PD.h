@@ -55,6 +55,10 @@ public:
 private:
 	class Directory_Entry // Laura Delaney is working on this section
 	{
+	private:
+		std::string name; //the name of the inidividual whose entry this is
+		std::string number; // the number for the individual named in name
+	
 	public:
 		Directory_Entry() {} // Default no-argument constructor
 		Directory_Entry(std::string the_name, std::string the_number) {
@@ -72,9 +76,6 @@ private:
 			number = new_number;
 			//the number is now the new number
 		}
-	private:
-		string name; //the name of the inidividual whose entry this is
-		string number; // the number for the individual named in name
 	};
 
 
