@@ -120,7 +120,20 @@ string Phone_Directory::remove_entry(const string& name) // Exercise 1.7: please
 	// for (int i = index; i < size - 1; i++)
 		// the_directory[i] = the_directory[i + 1];
 
-	return "";
+	//Jacob Hunter 9/14/2014
+	int index = find(name); // looks for entry with name
+	if (index != -1)
+	{
+		string number = the_directory[index].get_number(); // gets the number associated with name
+
+		for (int i = index; i < size - 1; i++)			//shifts everything above the entry down
+			the_directory[i] = the_directory[i + 1];
+		size--;
+
+		return number;
+	}
+	else
+		return "";
 }
 
 // Private method implementation
